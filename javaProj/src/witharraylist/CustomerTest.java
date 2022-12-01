@@ -8,19 +8,26 @@ public class CustomerTest {
 		ArrayList<Customer> customerList = new ArrayList<Customer>();	
 		
 		
-		//Customer형 인스턴스 형성
+		/* //Customer형 인스턴스 형성
 		Customer customerLee = new Customer(10010, "이순신");
 		Customer customerShin = new Customer(10020, "신사임당");
 		Customer customerHong = new GoldCustomer(10030, "홍길동");
 		Customer customerYoul = new GoldCustomer(10040, "이율곡");
-		Customer customerKim = new VIPCustomer(10050, "김유신", 12345);
+		Customer customerKim = new VIPCustomer(10050, "김유신", 12345); 
 		
 		//객체배열에 인스턴스 추가하기
 		customerList.add(customerLee);
 		customerList.add(customerShin);
 		customerList.add(customerHong);
 		customerList.add(customerYoul);
-		customerList.add(customerKim);
+		customerList.add(customerKim); */
+		
+		//Customer형 인스턴스생성, 배열에 추가 한번에 해보기...
+		customerList.add(new Customer(10010, "이순신"));
+		customerList.add(new Customer(10020, "신사임당"));
+		customerList.add(new GoldCustomer(10030, "홍길동"));
+		customerList.add(new GoldCustomer(10040, "이율곡"));
+		customerList.add(new VIPCustomer(10050, "김유신", 12345));
 		
 		//고객정보출력
 		System.out.println("===== 고객정보 출력 =====");

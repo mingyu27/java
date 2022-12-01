@@ -6,4 +6,5 @@
  *
  */
 module javaProj {
+	requires java.desktop;
 }
